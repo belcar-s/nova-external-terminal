@@ -4,3 +4,5 @@ At this time, **External Terminal** may not be used to open third-party terminal
 
 ## Details
 This is an image of the graphic!
+
+![](https://raw.githubusercontent.com/belcar-s/nova-external-terminal/trunk/Images/readme/amazing_graphic.png)
