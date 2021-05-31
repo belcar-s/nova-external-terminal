@@ -1,3 +1,7 @@
+## Version 1.3
+
+The _New External Terminal_ command is now bound to ⌥⌘C. There were minor updates to the icon.
+
 ## Version 1.2
 
 The extension's _Create New External Terminal_ command has been updated to match similar Nova commands.
