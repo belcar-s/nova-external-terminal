@@ -1,3 +1,7 @@
+## Version 1.4
+
+The icon has been updated such that there is more contrast between its rounded rectangle and dark backgrounds.
+
 ## Version 1.3
 
 The _New External Terminal_ command is now bound to ⌥⌘C. There were minor updates to the icon.
