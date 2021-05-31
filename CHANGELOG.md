@@ -1,6 +1,10 @@
+## Version 1.2
+
+The extension's _Create New External Terminal_ command has been updated to match similar Nova commands.
+
 ## Version 1.1
 
-Version 1.1 of External Terminal includes changes which cause a new button to be displayed in its Extension Library page. External Terminal's GitHub repository page is opened in response to that the button is clicked.
+A button is now displayed in the Extension Library which leads to External Terminal's GitHub repository page.
 
 ## Version 1.0
 
