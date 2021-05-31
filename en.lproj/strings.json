@@ -1,0 +1,5 @@
+{
+	"Process wasn't started": "Attempt to start the Terminal was unsucessful",
+	"Cause of process.start() errors": "An executable used by the extension may not have been found.",
+	"OK": "OK"
+}

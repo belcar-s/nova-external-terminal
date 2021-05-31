@@ -1,0 +1,24 @@
+{
+	"identifier": "belcar.Externalterminal",
+	"name": "External Terminal",
+	"organization": "belcar-s",
+	"description": "Displays a graphic that can be made contributing to that a terminal window, produced by additional software, appears.",
+	"version": "1.0",
+	"categories": ["commands"],
+
+	"main": "main.js",
+	"entitlements": {
+		"process": true
+	},
+
+
+	"commands": {
+		"extensions": [
+			{
+				"title": "Open External Terminal",
+				"command": "externalterminal.open",
+				"shortcut": "alt-cmd-c"
+			}
+		]
+	}
+}
