@@ -18,7 +18,7 @@
 	"commands": {
 		"extensions": [
 			{
-				"title": "Open External Terminal",
+				"title": "New External Terminal",
 				"command": "externalterminal.open",
 				"shortcut": "alt-cmd-c"
 			}
