@@ -5,6 +5,7 @@
 	"description": "Displays a graphic that can be made contributing to that a terminal window, produced by additional software, appears.",
 	"version": "1.0",
 	"categories": ["commands"],
+	"bugs": "https://github.com/belcar-s/nova-external-terminal/issues",
 
 	"main": "main.js",
 	"entitlements": {
