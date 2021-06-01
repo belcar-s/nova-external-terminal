@@ -1,3 +1,7 @@
+## Version 2.2.1
+
+The extension's icon has been updated to be more pleasing to look at at smaller sizes.
+
 ## Version 2.2
 
 - There were minimal alterations to extension messages.
