@@ -1,3 +1,7 @@
+## Version 2.2.2
+
+If Alacritty is set as the default terminal and installed, it will now be opened consequent to that the _New External Terminal_ command is used.
+
 ## Version 2.2.1
 
 The extension's icon has been updated to be more pleasing to look at at smaller sizes.
