@@ -40,7 +40,9 @@ nova.commands.register("externalterminal.open", (workspace) => {
 		process = new Process("/usr/bin/open", options);
 	} else {
 		options = {
-			args: ["alacritty", "--working-directory", workspace.path]
+			args: workspacepath
+			                   ? ["alacritty", "--working-directory", workspace.path]
+									 : ["alacritty"],
 		};
 
 		process = new Process("/usr/bin/env", options);
