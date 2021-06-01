@@ -13,8 +13,8 @@ nova.commands.register("externalterminal.open", (workspace) => {
 		// Open Terminal.app with workspace.path set as the working directory, unless
 		// there is no workspace.path.
 		args: workspace.path
-					? [workspace.path, "-a", TERMINAL_LOCATION]
-					: [TERMINAL_LOCATION],
+		                    ? [workspace.path, "-a", TERMINAL_LOCATION]
+		                    : [TERMINAL_LOCATION],
 	};
 
 	let process = new Process("/usr/bin/open", options);
