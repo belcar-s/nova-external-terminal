@@ -16,7 +16,7 @@ function getTerminal(workspace) {
 
 const TERMINAL_LOCATIONS = new Map([
 	["Apple Terminal", "/System/Applications/Utilities/Terminal.app"],
-	["iTerm2", "/Applications/iTerm.app"],
+	["iTerm", "/Applications/iTerm.app"],
 	["Alacritty", "/Applications/Alacritty.app"],
 	["Hyper", "/Applications/Hyper.app"],
 ])

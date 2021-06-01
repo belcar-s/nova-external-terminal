@@ -26,7 +26,7 @@
 
 			"values": [
 				"Apple Terminal",
-				"iTerm2",
+				"iTerm",
 				"Alacritty",
 				"Hyper"
 			]
@@ -45,7 +45,7 @@
 			"values": [
 				"Global Config",
 				"Apple Terminal",
-				"iTerm2",
+				"iTerm",
 				"Alacritty",
 				"Hyper"
 			]

@@ -8,7 +8,7 @@
 	"Use of default terminal": "La terminal por defecto se inicia después de usar el comando New External Terminal.",
 
 	"Apple Terminal": "Terminal de Apple",
-	"iTerm2": "iTerm2",
+	"iTerm": "iTerm",
 	"Alacritty": "Alacritty",
 	"Hyper": "Hyper",
 
@@ -16,12 +16,12 @@
 
 
 	"Couldn't find;Apple Terminal": "De algún modo, no se pudo encontrar la Terminal de Apple.",
-	"Couldn't find;iTerm2": "¿Dónde está iTerm2?",
+	"Couldn't find;iTerm": "¿Dónde está iTerm?",
 	"Couldn't find;Alacritty": "¿Dónde está Alacritty?",
 	"Couldn't find Hyper": "¿Dónde está Hyper?",
 
 	"Move or pick a new terminal emulator;Apple Terminal": "Este texto nunca debería ser mostrado. Por favor, haga un reporte con https://github.com/belcar-s/nova-external-terminal/issues.",
-	"Move or pick a new terminal emulator;iTerm2": "Mueva iTerm2 a la carpeta de Aplicaciones, o elija una nueva terminal en la página de preferencias de la extensión.",
+	"Move or pick a new terminal emulator;iTerm": "Mueva iTerm a la carpeta de Aplicaciones, o elija una nueva terminal en la página de preferencias de la extensión.",
 	"Move or pick a new terminal emulator;Alacritty": "Mueva Alacritty a la carpeta de Aplicaciones, o elija una nueva terminal en la página de preferencias de la extensión.",
 	"Move or pick a new terminal emulator;Hyper": "Mueva Hyper a la carpeta de Aplicaciones, o elija una nueva terminal en la página de preferencias de la extensión."
 }

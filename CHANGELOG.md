@@ -8,7 +8,7 @@ Correct README.
 
 ## Version 2.0
 
-The extension may now be used to launch Alacritty, iTerm2, and Hyper.
+The extension may now be used to launch Alacritty, iTerm, and Hyper.
 
 ## Version 1.4
 
