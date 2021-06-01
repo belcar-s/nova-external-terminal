@@ -1,3 +1,7 @@
+## Version 2.1
+
+Error handling was improved.
+
 ## Version 2.0.1
 
 Correct README.
