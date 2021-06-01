@@ -1,5 +1,16 @@
 {
+	"New External Terminal": "New External Terminal",
+
 	"Process wasn't started": "El intento de iniciar la terminal no fue exitoso",
 	"Cause of process.start() errors": "Un ejecutable usado por la extensión pudo no haber sido encontrado.",
-	"OK": "Aceptar"
+	"OK": "Aceptar",
+	"Terminal": "Terminal por defecto",
+	"Use of default terminal": "La terminal por defecto se inicia después de usar el comando New External Terminal.",
+
+	"Apple Terminal": "Terminal de Apple",
+	"iTerm2": "iTerm2",
+	"Alacritty": "Alacritty",
+	"Hyper": "Hyper",
+
+	"Global Config": "Configuración global"
 }

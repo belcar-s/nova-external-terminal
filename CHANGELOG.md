@@ -1,3 +1,7 @@
+## Version 2.0
+
+The extension may now be used to launch Alacritty, iTerm2, and Hyper.
+
 ## Version 1.4
 
 The icon has been updated such that there is more contrast between its rounded rectangle and dark backgrounds.

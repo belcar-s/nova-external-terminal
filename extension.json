@@ -2,8 +2,8 @@
 	"identifier": "belcar.Externalterminal",
 	"name": "External Terminal",
 	"organization": "belcar-s",
-	"description": "Open Terminal.app from the command palette!",
-	"version": "1.4",
+	"description": "Open your favorite Terminal from the command palette!",
+	"version": "2.0",
 	"categories": ["commands"],
 
 	"repository": "https://github.com/belcar-s/nova-external-terminal",
@@ -14,6 +14,43 @@
 		"process": true
 	},
 
+	"config": [
+		{
+			"key": "terminal",
+			"type": "enum",
+			"title": "Terminal",
+			"description": "Use of default terminal",
+			"radio": true,
+			"default": "Apple Terminal",
+			"allowsCustom": false,
+
+			"values": [
+				"Apple Terminal",
+				"iTerm2",
+				"Alacritty",
+				"Hyper"
+			]
+		}
+	],
+	"configWorkspace": [
+		{
+			"key": "terminal",
+			"type": "enum",
+			"title": "Terminal",
+			"description": "Use of default terminal",
+			"radio": true,
+			"default": "Global Config",
+			"allowsCustom": false,
+
+			"values": [
+				"Global Config",
+				"Apple Terminal",
+				"iTerm2",
+				"Alacritty",
+				"Hyper"
+			]
+		}
+	],
 
 	"commands": {
 		"extensions": [
