@@ -1,3 +1,7 @@
+## Version 2.0.1
+
+Correct README.
+
 ## Version 2.0
 
 The extension may now be used to launch Alacritty, iTerm2, and Hyper.
