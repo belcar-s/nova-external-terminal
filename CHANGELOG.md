@@ -1,10 +1,15 @@
+## Version 2.2
+
+- There were minimal alterations to extension messages.
+- A problem was fixed which caused attempts to launch Alacritty not to be successful in some circumstances.
+
 ## Version 2.1
 
 Error handling was improved.
 
 ## Version 2.0.1
 
-Correct README.
+An error in the README was corrected.
 
 ## Version 2.0
 
