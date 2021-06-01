@@ -48,6 +48,37 @@ nova.commands.register("externalterminal.open", (workspace) => {
 
 	process.onStderr((msg) => console.error(msg));
 
+	process.onDidExit((exitCode) => {
+		if (exitCode != 0) {
+			let notification = new NotificationRequest("non-zero");
+
+			notification.title = nova.localize(
+				"Couldn't find;" + terminal,
+				"Couldn't find " + terminal
+			);
+			notification.body = nova.localize(
+				"Move or pick a new terminal emulator;" + terminal,
+				`Move ${terminal} to the Applications folder, or pick a new terminal in the extension's preferences page.`
+			);
+
+			notification.actions = [
+				nova.localize("OK", "Dismiss"),
+				nova.localize("Pick new one", "Pick a new terminal")
+			];
+
+			nova.notifications.add(notification).then((reply) => {
+				if (reply.actionIdx == 1) {
+					let options = {
+						args: ["nova://extension/?id=belcar.Externalterminal&name=External%20Terminal"],
+					}
+					let process = new Process("/usr/bin/open", options)
+
+					process.start();
+				}
+			});
+		}
+	});
+
 	try {
 		process.start();
 	} catch (e) {
@@ -62,7 +93,7 @@ nova.commands.register("externalterminal.open", (workspace) => {
 			"An executable used by the extension may not have been found."
 		);
 
-		notification.actions = [nova.localize("OK", "OK")];
+		notification.actions = [nova.localize("OK", "Dismiss")];
 
 		nova.notifications.add(notification);
 	}
