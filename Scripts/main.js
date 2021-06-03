@@ -1,3 +1,5 @@
+const BUNDLE_IDENTIFIERS = require("../BUNDLE_IDENTIFIERS");
+
 exports.activate = function() {
 	// Do work when the extension is activated
 }
@@ -14,44 +16,24 @@ function getTerminal(workspace) {
 	}
 }
 
-const TERMINAL_LOCATIONS = new Map([
-	["Apple Terminal", "/System/Applications/Utilities/Terminal.app"],
-	["iTerm", "/Applications/iTerm.app"],
-	["Alacritty", "/Applications/Alacritty.app"],
-	["Hyper", "/Applications/Hyper.app"],
-])
-
 nova.commands.register("externalterminal.open", (workspace) => {
-	const terminal = getTerminal(workspace);
-	const TERMINAL_LOCATION = TERMINAL_LOCATIONS.get(terminal);
+	const terminal = BUNDLE_IDENTIFIERS[getTerminal(workspace)];
 
+	let args;
 
-	let options;
-	let process;
-	if (terminal != "Alacritty") {
-		options = {
-			// Open Terminal.app with workspace.path set as the working directory, unless
-			// there is no workspace.path.
-			args: workspace.path
-			                    ? [workspace.path, "-a", TERMINAL_LOCATION]
-			                    : [TERMINAL_LOCATION],
-		};
+	if (workspace.path) {
+		args = [workspace.path, "-b", terminal, "--args", "--working-directory", workspace.path];
 
-		process = new Process("/usr/bin/open", options);
+		if (terminal == "io.alacritty") args.shift();
 	} else {
-		options = {
-			args: workspace.path
-			                    ? ["alacritty", "--working-directory", workspace.path]
-                             : ["alacritty"],
-		};
-
-		process = new Process("/usr/bin/env", options);
+		args = ["-b", terminal];
 	}
 
+	let process = new Process("/usr/bin/open", { args });
 	process.onStderr((msg) => console.error(msg));
 
 	process.onDidExit((exitCode) => {
-		if (exitCode != 0) {
+		if (exitCode == 1) {
 			let notification = new NotificationRequest("non-zero");
 
 			notification.title = nova.localize(
@@ -60,7 +42,7 @@ nova.commands.register("externalterminal.open", (workspace) => {
 			);
 			notification.body = nova.localize(
 				"Move or pick a new terminal emulator;" + terminal,
-				`Move ${terminal} to the Applications folder, or pick a new terminal in the extension's preferences page.`
+				`Pick a new terminal in the extension's preferences page.`
 			);
 
 			notification.actions = [
@@ -81,22 +63,5 @@ nova.commands.register("externalterminal.open", (workspace) => {
 		}
 	});
 
-	try {
-		process.start();
-	} catch (e) {
-		let notification = new NotificationRequest("process-wasnt-started");
-
-		notification.title = nova.localize(
-			"Process wasn't started",
-			"Attempt to start the Terminal was unsucessful"
-		);
-		notification.body = nova.localize(
-			"Cause of process.start() errors",
-			"An executable used by the extension may not have been found."
-		);
-
-		notification.actions = [nova.localize("OK", "Dismiss")];
-
-		nova.notifications.add(notification);
-	}
+	process.start();
 })

@@ -1,3 +1,7 @@
+## Version 2.3
+
+Terminal emulators no longer need to be installed in the Applications folder for the extension to launch them (thanks jfieber, kopischke!)
+
 ## Version 2.2.2
 
 If Alacritty is set as the default terminal and installed, it will now be opened consequent to that the _New External Terminal_ command is used.

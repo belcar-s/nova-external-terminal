@@ -1,8 +1,6 @@
 {
 	"New External Terminal": "New External Terminal",
 
-	"Process wasn't started": "El intento de iniciar la terminal no fue exitoso",
-	"Cause of process.start() errors": "Un ejecutable usado por la extensión pudo no haber sido encontrado.",
 	"OK": "Aceptar",
 	"Terminal": "Terminal por defecto",
 	"Use of default terminal": "La terminal por defecto se inicia después de usar el comando New External Terminal.",
@@ -11,17 +9,20 @@
 	"iTerm": "iTerm",
 	"Alacritty": "Alacritty",
 	"Hyper": "Hyper",
+	"Terminus": "Terminus",
 
 	"Global Config": "Configuración global",
 
 
-	"Couldn't find;Apple Terminal": "De algún modo, no se pudo encontrar la Terminal de Apple.",
+	"Couldn't find;Apple Terminal": "¿Dónde está la Terminal de Apple?",
 	"Couldn't find;iTerm": "¿Dónde está iTerm?",
 	"Couldn't find;Alacritty": "¿Dónde está Alacritty?",
-	"Couldn't find Hyper": "¿Dónde está Hyper?",
+	"Couldn't find;Hyper": "¿Dónde está Hyper?",
+	"Couldn't find;Terminus": "¿Dónde está Terminus?",
 
-	"Move or pick a new terminal emulator;Apple Terminal": "Este texto nunca debería ser mostrado. Por favor, haga un reporte con https://github.com/belcar-s/nova-external-terminal/issues.",
-	"Move or pick a new terminal emulator;iTerm": "Mueva iTerm a la carpeta de Aplicaciones, o elija una nueva terminal en la página de preferencias de la extensión.",
-	"Move or pick a new terminal emulator;Alacritty": "Mueva Alacritty a la carpeta de Aplicaciones, o elija una nueva terminal en la página de preferencias de la extensión.",
-	"Move or pick a new terminal emulator;Hyper": "Mueva Hyper a la carpeta de Aplicaciones, o elija una nueva terminal en la página de preferencias de la extensión."
+	"Move or pick a new terminal emulator;Apple Terminal": "Por favor, haga un reporte con https://github.com/belcar-s/nova-external-terminal/issues.",
+	"Move or pick a new terminal emulator;iTerm": "iTerm no se pudo encontrar. Elija una nueva terminal en la página de preferencias de la extensión.",
+	"Move or pick a new terminal emulator;Alacritty": "Alacritty no se pudo encontrar. Elija una nueva terminal en la página de preferencias de la extensión.",
+	"Move or pick a new terminal emulator;Hyper": "Hyper no se pudo encontrar. Elija una nueva terminal en la página de preferencias de la extensión.",
+	"Move or pick a new terminal emulator;Terminus": "Terminus no se pudo encontrar. Elija una nueva terminal en la página de preferencias de la extensión."
 }
