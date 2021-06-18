@@ -3,7 +3,7 @@
 	"name": "External Terminal",
 	"organization": "belcar-s",
 	"description": "Open your favorite Terminal from the command palette!",
-	"version": "2.3",
+	"version": "2.4",
 	"categories": ["commands"],
 
 	"repository": "https://github.com/belcar-s/nova-external-terminal",

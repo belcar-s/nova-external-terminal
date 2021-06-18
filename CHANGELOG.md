@@ -1,6 +1,11 @@
+## Version 2.4
+
+- Terminal emulators are no longer referred to by their bundle identifiers in error messages.
+- Pressing the _Pick another terminal_ button now leads to the workspace preferences when they are more tightly related to the cause of its appearance.
+
 ## Version 2.3
 
-Terminal emulators no longer need to be installed in the Applications folder for the extension to launch them (thanks jfieber, kopischke!)
+Terminal emulators no longer need to be installed in the Applications folder for the extension to launch them (thanks [jfieber](https://github.com/jfieber), [kopischke](https://github.com/kopischke)!)
 
 ## Version 2.2.2
 
