@@ -14,15 +14,11 @@
 	"Global Config": "Global Config",
 
 
-	"Couldn't find;Apple Terminal": "Couldn't find Apple Terminal",
-	"Couldn't find;iTerm": "Couldn't find iTerm",
-	"Couldn't find;Alacritty": "Couldn't find Alacritty",
-	"Couldn't find;Hyper": "Couldn't find Hyper",
-	"Couldn't find;Terminus": "Couldn't find Terminus",
+	"Couldn't find;com.apple.Terminal": "Couldn't find Apple Terminal",
+	"Couldn't find;com.googlecode.iterm2": "Couldn't find iTerm",
+	"Couldn't find;io.alacritty": "Couldn't find Alacritty",
+	"Couldn't find;co.zeit.hyper": "Couldn't find Hyper",
 
-	"Move or pick a new terminal emulator;Apple Terminal": "Unless you expect this, please file a report at https://github.com/belcar-s/nova-external-terminal/issues.",
-	"Move or pick a new terminal emulator;iTerm": "Pick a new terminal in the extension's preferences page.",
-	"Move or pick a new terminal emulator;Alacritty": "Pick a new terminal in the extension's preferences page.",
-	"Move or pick a new terminal emulator;Hyper": "Pick a new terminal in the extension's preferences page.",
-	"Move or pick a new terminal emulator;Terminus": "Pick a new terminal in the extension's preferences page."
+	"Pick another terminal emulator": "Pick another terminal emulator in the extension's preferences page.",
+	"Pick another": "Pick another terminal emulator"
 }

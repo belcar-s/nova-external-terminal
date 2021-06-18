@@ -38,16 +38,14 @@ nova.commands.register("externalterminal.open", (workspace) => {
 
 			notification.title = nova.localize(
 				"Couldn't find;" + terminal,
-				"Couldn't find " + terminal
 			);
 			notification.body = nova.localize(
-				"Move or pick a new terminal emulator;" + terminal,
-				`Pick a new terminal in the extension's preferences page.`
+				"Pick another terminal emulator",
 			);
 
 			notification.actions = [
 				nova.localize("OK", "Dismiss"),
-				nova.localize("Pick new one", "Pick a new terminal")
+				nova.localize("Pick another"),
 			];
 
 			nova.notifications.add(notification).then((reply) => {
