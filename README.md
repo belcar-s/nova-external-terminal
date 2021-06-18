@@ -4,6 +4,6 @@ It's extremely lightweight, and can be configured to launch Apple Terminal, iTer
 
 ## Details
 
-This image includes the graphic that may be made contributing to the outcome described above:
+This image includes the graphic that may be made contributing to the outcome described above!
 
 ![](https://raw.githubusercontent.com/belcar-s/nova-external-terminal/trunk/Images/readme/amazing_graphic.png)
