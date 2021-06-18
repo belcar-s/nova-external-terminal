@@ -50,12 +50,17 @@ nova.commands.register("externalterminal.open", (workspace) => {
 
 			nova.notifications.add(notification).then((reply) => {
 				if (reply.actionIdx == 1) {
-					let options = {
-						args: ["nova://extension/?id=belcar.Externalterminal&name=External%20Terminal"],
-					}
-					let process = new Process("/usr/bin/open", options)
+					switch (workspace.config.get("terminal")) {
+						case "Global Config": {
+							nova.openConfig();
+							break;
+						}
 
-					process.start();
+						default: {
+							workspace.openConfig();
+							break;
+						}
+					}
 				}
 			});
 		}
