@@ -11,7 +11,7 @@ exports.deactivate = function() {
 function getTerminal(workspace) {
 	if (workspace.config.get("terminal") != "Global Config") {
 		return workspace.config.get("terminal");
-	} else {
+	} else {
 		return nova.config.get("terminal");
 	}
 }
