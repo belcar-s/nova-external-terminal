@@ -9,6 +9,7 @@
 	"iTerm": "iTerm",
 	"Alacritty": "Alacritty",
 	"Hyper": "Hyper",
+	"Warp": "Warp",
 	"Terminus": "Terminus",
 
 	"Global Config": "Global Config",
@@ -18,6 +19,7 @@
 	"Couldn't find;com.googlecode.iterm2": "Couldn't find iTerm",
 	"Couldn't find;io.alacritty": "Couldn't find Alacritty",
 	"Couldn't find;co.zeit.hyper": "Couldn't find Hyper",
+	"Couldn't find;dev.warp.Warp-Stable": "Couldn't find Warp",
 
 	"Pick another terminal emulator": "Pick another terminal emulator in the extension's preferences page.",
 	"Pick another": "Pick another terminal emulator"
