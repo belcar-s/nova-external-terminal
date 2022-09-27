@@ -9,6 +9,7 @@
 	"iTerm": "iTerm",
 	"Alacritty": "Alacritty",
 	"Hyper": "Hyper",
+	"Warp": "Warp",
 	"Terminus": "Terminus",
 
 	"Global Config": "Configuración global",
@@ -18,6 +19,7 @@
 	"Couldn't find;com.googlecode.iterm2": "¿Dónde está iTerm?",
 	"Couldn't find;io.alacritty": "¿Dónde está Alacritty?",
 	"Couldn't find;co.zeit.hyper": "¿Dónde está Hyper?",
+	"Couldn't find;dev.warp.Warp-Stable": "¿Dónde está Warp?",
 
 	"Pick another terminal emulator": "Elija otra aplicación en la página de preferencias de la extensión.",
 	"Pick another": "Elija una aplicación distinta"
